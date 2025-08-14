@@ -1,5 +1,6 @@
 # Web3 Spaces
 
+Preview: [Web3Spaces](https://urko94.github.io/w3s/)
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
 ## Setup
