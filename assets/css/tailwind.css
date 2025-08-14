@@ -1,0 +1,9 @@
+@import 'tailwindcss/base';
+@import './main';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'aos/dist/aos.css';
+@import 'add-to-calendar-button/assets/css/atcb.min.css';
+@import './typography';
+@import './forms';
+@import './transitions';

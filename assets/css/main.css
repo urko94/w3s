@@ -1,0 +1,51 @@
+html,
+body {
+  overflow-x: hidden;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.foreground {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-repeat: repeat;
+  pointer-events: none;
+  background: url('/assets/images/bg-noise.png');
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+}
+@layer base {
+  body {
+    @apply h-full font-sans text-white;
+    font-size: 16px;
+
+    background: theme('colors.background');
+  }
+}
+
+/* Scrollbar */
+@screen lg {
+  html {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: theme('colors.background');
+  }
+}
+
+/* Text selection */
+::selection,
+::-moz-selection {
+  color: theme('colors.dark');
+  background: theme('colors.white');
+}

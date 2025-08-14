@@ -1,0 +1,75 @@
+/**
+  * FORMS
+  */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input {
+  appearance: none;
+  outline: none;
+}
+
+/* Change autfill styles:  */
+input:autofill,
+input:autofill:hover,
+input:autofill:focus,
+textarea:autofill,
+textarea:autofill:hover,
+textarea:autofill:focus,
+select:autofill,
+select:autofill:hover,
+select:autofill:focus {
+  border: none;
+  -webkit-text-fill-color: none;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.field {
+  @apply mb-3 flex items-center;
+
+  input[type='radio'] + label {
+    @apply relative flex w-full items-center bg-white/20;
+    padding: 7px 18px 7px 54px;
+    border-radius: 60px;
+    cursor: pointer;
+
+    &:before {
+      content: ' ';
+      position: absolute;
+      left: 18px;
+      top: calc(50% - 10px);
+      display: block;
+      width: 20px;
+      height: 20px;
+      border: 2px solid theme('colors.white');
+      border-radius: 50%;
+    }
+  }
+
+  input[type='radio'] + label:before {
+  }
+
+  input[type='radio']:checked + label:after {
+    content: ' ';
+    position: absolute;
+    top: calc(50% - 6px);
+    left: 22px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: theme('colors.blue.DEFAULT');
+    border-radius: 50%;
+  }
+  input[type='radio']:checked + label:after {
+  }
+}

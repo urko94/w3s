@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'TT Trailers';
+  src: url('./fonts/TTTrailers-Black.woff2') format('woff2'),
+    url('./fonts/TTTrailers-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  /* Headline 1 */
+  h1 {
+    @apply font-heading;
+    @apply text-white;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1;
+    letter-spacing: 0.02em;
+
+    @screen sm {
+      font-size: 4rem;
+    }
+    @screen md {
+      font-size: 5rem;
+    }
+    @screen lg {
+      font-size: 6.25rem;
+    }
+  }
+
+  /* Headline 2 */
+  h2 {
+    @apply font-heading;
+    @apply text-white;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 0.02em;
+
+    @screen md {
+      font-size: 5rem;
+    }
+  }
+
+  /* Headline project */
+  h3 {
+    @apply font-heading;
+    @apply text-white;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 0.02em;
+
+    @screen md {
+      font-size: 3.75rem;
+    }
+  }
+  h4 {
+    @apply font-heading;
+    @apply text-white;
+    font-size: 2.25rem;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 0.02em;
+  }
+
+  /* Subtitle */
+  h5 {
+    @apply font-sans;
+    @apply text-white;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.4em;
+  }
+  h6 {
+    @apply font-sans;
+    @apply text-white;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.71;
+    letter-spacing: 0.4em;
+  }
+
+  p {
+    @apply font-sans;
+    @apply text-white;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* Paragraph margins */
+  h2 + p {
+    margin-top: 2.5rem;
+  }
+  p + p {
+    margin-top: 1rem;
+  }
+
+  /* Font sizes */
+  .heading-lg {
+    @apply font-heading;
+    @apply text-white;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 0.02em;
+  }
+  .heading-md {
+    @apply font-heading;
+    @apply text-white;
+    font-size: 1.25rem;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 0.02em;
+  }
+  .heading-sm {
+    @apply font-heading;
+    @apply text-white;
+    font-size: 1.125rem;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 0.02em;
+  }
+
+  .body-lg {
+    @apply font-sans;
+    @apply text-white;
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+
+  .body-md {
+    @apply font-sans;
+    @apply text-white;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .body-sm {
+    @apply font-sans;
+    @apply text-white;
+    font-size: 0.938rem;
+    line-height: 1.5;
+  }
+
+  .body-xs {
+    @apply font-sans;
+    @apply text-white;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  .body-xxs {
+    @apply font-sans;
+    @apply text-white;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+  }
+
+  /** Text gold **/
+  .text-gold {
+    background: linear-gradient(90.62deg, #d18d21 0.62%, #f4eee4 31.88%, #d89d41 82.22%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+}
