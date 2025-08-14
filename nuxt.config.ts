@@ -33,6 +33,10 @@ export default defineNuxtConfig({
     middleware: ['auto-login', 'protected-routes'],
   },
 
+  vite: {
+    base: '/w3s/',
+  },
+
   publicRuntimeConfig: {
     ENV: process.env.ENV || process.env.NODE_ENV,
     appUrl: config.appUrl || meta.url,
@@ -48,6 +52,7 @@ export default defineNuxtConfig({
   },
 
   app: {
+    baseURL: '/w3s/',
     head: {
       htmlAttrs: {
         lang: 'en',
